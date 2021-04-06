@@ -25,7 +25,7 @@ const Hero = () => {
               Get a fresh and tasty recepies that are well balanced and will
               improve your wellness, plus add nutrients to your body.
             </HeroText>
-            <HeroBtn to="/about">
+            <HeroBtn to="/cookies/about">
               <Button primary big bigFont bigRadius>
                 Pick your meals
               </Button>

@@ -14,13 +14,13 @@ function App() {
       <GlobalStyle />
       <NavBar/>
       <Switch>
-          <Route exact path="/">
+          <Route exact path="/cookies">
             <Hero />
           </Route>
-          <Route path="/about">
+          <Route path="/cookies/about">
             <About />
           </Route>
-          <Route path="/form">
+          <Route path="/cookies/form">
             <Form />
           </Route>
         </Switch>
