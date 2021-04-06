@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/sweet-tooth-cookies/static/js/main.49d360e4.chunk.js",
+    "main.js.map": "/sweet-tooth-cookies/static/js/main.49d360e4.chunk.js.map",
+    "runtime-main.js": "/sweet-tooth-cookies/static/js/runtime-main.5f562c50.js",
+    "runtime-main.js.map": "/sweet-tooth-cookies/static/js/runtime-main.5f562c50.js.map",
+    "static/js/2.25573abe.chunk.js": "/sweet-tooth-cookies/static/js/2.25573abe.chunk.js",
+    "static/js/2.25573abe.chunk.js.map": "/sweet-tooth-cookies/static/js/2.25573abe.chunk.js.map",
+    "static/js/3.803c6e9b.chunk.js": "/sweet-tooth-cookies/static/js/3.803c6e9b.chunk.js",
+    "static/js/3.803c6e9b.chunk.js.map": "/sweet-tooth-cookies/static/js/3.803c6e9b.chunk.js.map",
+    "index.html": "/sweet-tooth-cookies/index.html",
+    "static/js/2.25573abe.chunk.js.LICENSE.txt": "/sweet-tooth-cookies/static/js/2.25573abe.chunk.js.LICENSE.txt",
+    "static/media/hero-bg.67610047.jpg": "/sweet-tooth-cookies/static/media/hero-bg.67610047.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f562c50.js",
+    "static/js/2.25573abe.chunk.js",
+    "static/js/main.49d360e4.chunk.js"
+  ]
+}
