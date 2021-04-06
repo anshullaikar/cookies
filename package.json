@@ -2,7 +2,7 @@
   "name": "cookie-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://anshullaikar.github.io/sweet-tooth-cookies",
+  "homepage": "http://anshullaikar.github.io/cookies",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
