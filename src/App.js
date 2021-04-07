@@ -1,30 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Form from "./containers/Form";
-
-import About from "./containers/About";
+import NewNavBar from "./components/NewNavBar";
+import Home from "./containers/Home";
 
 import GlobalStyle from "./styles/globalStyles";
 import NavBar from "./components/NavBar";
-import Hero from "./components/Hero/Hero"
 
 function App() {
   return (
     <Router>
-      <GlobalStyle />
-      <NavBar/>
+      <NewNavBar />
       <Switch>
-          <Route exact path="/cookies">
-            <Hero />
-          </Route>
-          <Route path="/cookies/about">
-            <About />
-          </Route>
-          <Route path="/cookies/form">
-            <Form />
-          </Route>
-        </Switch>
-      
+        <Route path="/cookies" exact component={Home}></Route>
+        {/* <Route path="/cookies/about" component={NewAbout}></Route> */}
+      </Switch>
     </Router>
   );
 }

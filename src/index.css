@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-DancingScript{
+    font-family: "Dancing Script", cursive;
+}
+
+.font-NotoSansJP {
+    font-family: "Noto Sans JP", cursive;
+}

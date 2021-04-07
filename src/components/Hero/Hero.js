@@ -17,13 +17,13 @@ const Hero = () => {
         <HeroContent>
           <HeroContentText>
             <HeroTitle>
-              <HeroTitleText>Healthy</HeroTitleText>
-              <HeroTitleText>Meals All Day</HeroTitleText>
+              <HeroTitleText>Get Your</HeroTitleText>
+              <HeroTitleText>Favorite Cookies</HeroTitleText>
             </HeroTitle>
-            <HeroSubTitle>For a longer Life</HeroSubTitle>
+            <HeroSubTitle>Tasty and Rich</HeroSubTitle>
             <HeroText>
-              Get a fresh and tasty recepies that are well balanced and will
-              improve your wellness, plus add nutrients to your body.
+              Get tasty cookies that are well balanced and will improve your
+              wellness, plus add nutrients to your body.
             </HeroText>
             <HeroBtn to="/cookies/about">
               <Button primary big bigFont bigRadius>

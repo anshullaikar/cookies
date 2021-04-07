@@ -1,7 +1,14 @@
-import React from "react";
+import React, { Fragment } from 'react'
+import Hero from './Hero'
+import Items from "../components/Items"
 
-function Home() {
-  return <div>Hi</div>;
+const Home = () => {
+    return (
+        <Fragment>
+            <Hero/>
+            <Items/>
+        </Fragment>
+    )
 }
 
-export default Home;
+export default Home
