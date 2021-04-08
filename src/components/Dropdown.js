@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Dropdown = () => {
   return (
-    <div className="font-mono grid grid-rows-4 text-center items-center">
+    <div className="md:hidden font-mono grid grid-rows-4 text-center items-center">
       <Link to="/cookies" className="p-4">
         Home
       </Link>

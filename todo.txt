@@ -1,0 +1,2 @@
+1. give the Cards a Component of their own. make the component. Tailwind is super component friendly and terrible for things which are not components. Map the products too. 
+2. Write an about page

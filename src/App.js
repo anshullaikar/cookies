@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@tailwindui/react";
-import Footer from "./containers/Footer"
+import Footer from "./containers/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NewNavBar from "./components/NewNavBar";
 import Home from "./containers/Home";
@@ -8,12 +8,21 @@ import Dropdown from "./components/Dropdown";
 import OutsideAlerter from "./scripts/OutsideAlerter";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  
   const toggle = () => {
+    // console.log(isOpenButton, isOpen);
+    // if (isOpenButton) {
     setIsOpen(!isOpen);
+    // }
   };
+  // const toggleButton = () => {
+  //   console.log(isOpenButton, isOpen);
+  //   setIsOpenButton(!isOpenButton);
+  //   setIsOpen(true);
+  // };
   return (
     <Router>
-      <NewNavBar toggle={toggle} />
+      <NewNavBar isOpen={isOpen} toggle={toggle} />
       <Transition
         show={isOpen}
         enter="transition-opacity duration-75"
@@ -23,7 +32,9 @@ function App() {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <OutsideAlerter toggle = {toggle}> {/*check if outside the dropdown, then close*/}
+        <OutsideAlerter toggle={toggle}>
+          {" "}
+          {/*check if outside the dropdown, then close*/}
           <Dropdown />
         </OutsideAlerter>
       </Transition>
@@ -31,7 +42,7 @@ function App() {
         <Route path="/cookies" exact component={Home}></Route>
         {/* <Route path="/cookies/about" component={NewAbout}></Route> */}
       </Switch>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
