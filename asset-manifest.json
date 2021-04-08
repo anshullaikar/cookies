@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/cookies/static/css/main.f29386d9.chunk.css",
-    "main.js": "/cookies/static/js/main.66502de9.chunk.js",
-    "main.js.map": "/cookies/static/js/main.66502de9.chunk.js.map",
-    "runtime-main.js": "/cookies/static/js/runtime-main.4fcf579b.js",
-    "runtime-main.js.map": "/cookies/static/js/runtime-main.4fcf579b.js.map",
-    "static/js/2.7f881808.chunk.js": "/cookies/static/js/2.7f881808.chunk.js",
-    "static/js/2.7f881808.chunk.js.map": "/cookies/static/js/2.7f881808.chunk.js.map",
-    "static/js/3.ded51c49.chunk.js": "/cookies/static/js/3.ded51c49.chunk.js",
-    "static/js/3.ded51c49.chunk.js.map": "/cookies/static/js/3.ded51c49.chunk.js.map",
+    "main.css": "/cookies/static/css/main.a9a80df3.chunk.css",
+    "main.js": "/cookies/static/js/main.ed4b63cf.chunk.js",
+    "main.js.map": "/cookies/static/js/main.ed4b63cf.chunk.js.map",
+    "runtime-main.js": "/cookies/static/js/runtime-main.678dfff3.js",
+    "runtime-main.js.map": "/cookies/static/js/runtime-main.678dfff3.js.map",
+    "static/js/2.ef1d5434.chunk.js": "/cookies/static/js/2.ef1d5434.chunk.js",
+    "static/js/2.ef1d5434.chunk.js.map": "/cookies/static/js/2.ef1d5434.chunk.js.map",
+    "static/js/3.3983a8a7.chunk.js": "/cookies/static/js/3.3983a8a7.chunk.js",
+    "static/js/3.3983a8a7.chunk.js.map": "/cookies/static/js/3.3983a8a7.chunk.js.map",
     "index.html": "/cookies/index.html",
-    "static/css/main.f29386d9.chunk.css.map": "/cookies/static/css/main.f29386d9.chunk.css.map",
-    "static/js/2.7f881808.chunk.js.LICENSE.txt": "/cookies/static/js/2.7f881808.chunk.js.LICENSE.txt",
+    "static/css/main.a9a80df3.chunk.css.map": "/cookies/static/css/main.a9a80df3.chunk.css.map",
+    "static/js/2.ef1d5434.chunk.js.LICENSE.txt": "/cookies/static/js/2.ef1d5434.chunk.js.LICENSE.txt",
+    "static/media/cookie-choco-chunk.72768140.jpg": "/cookies/static/media/cookie-choco-chunk.72768140.jpg",
+    "static/media/cookie-normal.e13481ed.jpeg": "/cookies/static/media/cookie-normal.e13481ed.jpeg",
     "static/media/hero-bg.67610047.jpg": "/cookies/static/media/hero-bg.67610047.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4fcf579b.js",
-    "static/js/2.7f881808.chunk.js",
-    "static/css/main.f29386d9.chunk.css",
-    "static/js/main.66502de9.chunk.js"
+    "static/js/runtime-main.678dfff3.js",
+    "static/js/2.ef1d5434.chunk.js",
+    "static/css/main.a9a80df3.chunk.css",
+    "static/js/main.ed4b63cf.chunk.js"
   ]
 }
