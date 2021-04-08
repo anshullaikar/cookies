@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@tailwindui/react";
-
+import Footer from "./containers/Footer"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NewNavBar from "./components/NewNavBar";
 import Home from "./containers/Home";
@@ -31,6 +31,7 @@ function App() {
         <Route path="/cookies" exact component={Home}></Route>
         {/* <Route path="/cookies/about" component={NewAbout}></Route> */}
       </Switch>
+      <Footer/>
     </Router>
   );
 }
