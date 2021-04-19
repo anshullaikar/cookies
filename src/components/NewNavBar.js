@@ -23,7 +23,7 @@ const NewNavBar = (props) => {
           />
         </svg>
       </div>}
-      <div className="pr-8 md:block hidden">
+      <div className="pr-8 md:block hidden font-medium">
         <Link to="/cookies" className="p-4">Home</Link>
         <Link to="/cookies/about" className="p-4">About</Link>
         <a href="https://forms.gle/zwYYFxNB1DXQM9VX7" className="p-4">Order Now</a>

@@ -10,7 +10,7 @@ const Hero = () => {
       <h1 className="font-DancingScript lg:text-9xl md:text-8xl sm:text-7xl text-5xl font-black mb-14">
         Sweet Tooth Cookies
       </h1>
-      <a href = "https://forms.gle/zwYYFxNB1DXQM9VX7" className="font-semibold transform lg:text-lg md:text-base sm:text-sm text-xs py-2 px-3 md:py-4 md:px-6 bg-yellow-500 rounded-full ease-out hover:bg-yellow-300 transition duration-200 hover:scale-110 flex items-center">
+      <a href = "https://forms.gle/zwYYFxNB1DXQM9VX7" className="font-medium transform lg:text-lg md:text-base sm:text-sm text-xs py-2 px-3 md:py-4 md:px-6 bg-yellow-500 rounded-full ease-out hover:bg-yellow-300 transition duration-200 hover:scale-110 flex items-center">
         <svg
           className="w-6 h-6 mr-2"
           fill="none"
