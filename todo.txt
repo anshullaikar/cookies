@@ -1,2 +1,5 @@
 1. give the Cards a Component of their own. make the component. Tailwind is super component friendly and terrible for things which are not components. Map the products too. 
 2. Write an about page
+3. make a big bg for hero. And put sweet tooth cookies header as rounded text div
+
+https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css

@@ -1,68 +1,31 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ChocCookieImg from "../images/cookie-normal.jpeg";
 import ChocChunkCookieImg from "../images/cookie-choco-chunk.jpg";
+import Item from "./Item";
 
 const Items = () => {
-  return (
-    <div className="w-full flex justify-center items-center card-gradient-bg mt-8">
-      <div className="w-full flex flex-wrap md:mx-6 mx-3 my-8 justify-center self-auto">
-        {/* <div class="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">
-          <div class="border h-12 text-sm text-grey-dark flex items-center justify-center">
-            <p>full / half / quarter</p>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">
-          <div class="border h-12 text-sm text-grey-dark flex items-center justify-center">
-            <p>full / half / quarter</p>
-          </div>
-        </div> */}
-        <div
-          id="item-1"
-          className="xl:m-4 my-2 font-sans font-bold rounded-3xl w-full md:w-2/5 px-2 max-w-xl flex items-center justify-center capitalize "
-        >
-          <div
-            // style={{
-            //   background: `url(${ChocCookieImg})`,
-            //   backgroundSize: "cover",
-            //   backgroundRepeat: "no-repeat",
-            // }}
-            className="card-shadow w-full rounded-3xl h-96 text-grey-dark flex justify-center items-center pt-2 bg-white"
-          >
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-xl text-center md:text-2xl lg:text-3xl">
-                chocolate chip
-              </h1>
-              <div className="bg-green-500 h-48 w-48 m-2"></div>
-              <p>Description of the pic</p>
-              <p>Prices: 179/350/600</p>
+    return (
+        <Fragment>
+            <div id="items" className="w-full flex flex-col justify-center items-center card-gradient-bg pb-8">
+                <h1 className="dark-text  bg-white font-DancingScript py-2 px-5 lg:text-8xl rounded-3xl md:text-6xl sm:text-5xl text-4xl font-black my-6 md:my-10 lg:my-16 h-4/5 text-center">
+                    Items
+                </h1>
+                <div className="w-full flex flex-wrap md:mx-5 mx-3 justify-center self-auto">
+                    
+                    <Item
+                        id="item-1"
+                        title="chocolate chip cookies"
+                        overlayText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    />
+                    <Item
+                    id="item-1"
+                    title="chocolate chip cookies with extra chocolate chunks"
+                    overlayText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    />
+                </div>
             </div>
-          </div>
-        </div>
-        <div
-          id="item-2"
-          className="xl:m-4 my-2 font-sans font-bold rounded-3xl w-full md:w-2/5 px-2 max-w-xl flex items-center justify-center capitalize"
-        >
-          <div
-            // style={{
-            //   background: `url(${ChocCookieImg})`,
-            //   backgroundSize: "cover",
-            //   backgroundRepeat: "no-repeat",
-            // }}
-            className="card-shadow w-full rounded-3xl h-96 text-grey-dark flex justify-center items-center pt-2 bg-white"
-          >
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-xl text-center md:text-2xl lg:text-3xl">
-                chocolate chip with extra chocolate chunks
-              </h1>
-              <div className="bg-green-500 h-48 w-48 m-2"></div>
-              <p>Description of the pic</p>
-              <p>Prices: 179/350/600</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+        </Fragment>
+    );
 };
 
 export default Items;

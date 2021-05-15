@@ -39,7 +39,7 @@ function App() {
         </OutsideAlerter>
       </Transition>
       <Switch>
-        <Route path="/cookies" exact component={Home}></Route>
+        <Route path="/" exact component={Home}></Route>
         {/* <Route path="/cookies/about" component={NewAbout}></Route> */}
       </Switch>
       <Footer />
