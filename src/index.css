@@ -21,7 +21,7 @@ body { padding-top: 4rem; }
 }
 
 .card-gradient-bg {
-    background-color: #f59e0b;
+    background-color: #f59f0b2f;
     /* background: #00c9ff; fallback for old browsers */
 }
 #footer {
@@ -97,7 +97,7 @@ body { padding-top: 4rem; }
 }
 
 .footer-bg {
-    background-color: #ff5d17;
+    background-color: #ff5d1741;
 }
 
 .icon {

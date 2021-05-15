@@ -1,5 +1,5 @@
 import React from "react";
-
+import Button from "@material-ui/core/Button";
 const Item = (props) => {
     return (
         <div
@@ -14,6 +14,14 @@ const Item = (props) => {
                     <p className="m-2 font-normal text-base text-center md:text-lg lg:text-xl">
                         {props.overlayText}
                     </p>
+                    <Button
+                        // onClick={() => {
+                        //     handleAddToCart(item);
+                        // }}
+                        className="rounded-b-3xl w-full font-sans font-semibold focus:outline-none"
+                    >
+                        Add To Cart
+                    </Button>
                 </div>
             </div>
         </div>

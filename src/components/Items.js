@@ -18,7 +18,7 @@ const Items = () => {
                         overlayText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     />
                     <Item
-                    id="item-1"
+                    id="item-2"
                     title="chocolate chip cookies with extra chocolate chunks"
                     overlayText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     />
