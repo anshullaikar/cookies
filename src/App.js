@@ -7,7 +7,6 @@ import Home from "./containers/Home";
 import Dropdown from "./components/Dropdown";
 import OutsideAlerter from "./scripts/OutsideAlerter";
 function App() {
-    
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -40,7 +39,7 @@ function App() {
                 </OutsideAlerter>
             </Transition>
             <Switch>
-                <Route path="/" exact component={Home}></Route>
+                <Route path="/cookies" exact component={Home}></Route>
                 {/* <Route path="/cookies/about" component={NewAbout}></Route> */}
             </Switch>
             <Footer />

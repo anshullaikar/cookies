@@ -4,15 +4,18 @@ import CookiesHero from "../images/hero-bg.jpg";
 const Hero = () => {
     return (
         <div>
-            <div id="hero" className=" hero-bg w-100 flex flex-row justify-center items-center p-4 h-screen-2/3 md:h-screen-nav min-h-36">
+            <div
+                id="hero"
+                className=" hero-bg w-100 flex flex-row justify-center items-center p-4 h-screen-2/3 md:h-screen-nav min-h-36"
+            >
                 <div className="w-screen h-full flex-row">
                     <h1 className="text-yellow-900 font-DancingScript w-1/3 lg:text-9xl md:text-8xl sm:text-7xl text-5xl font-black mt-16 h-4/5 flex items-center">
                         Sweet Tooth Cookies
                     </h1>
                     <div className="flex flex-col justify-center items-center w-100">
                         <a
-                        id="order-now-link"
-                            href="/#items"
+                            id="order-now-link"
+                            href="/cookies/#items"
                             className="font-NotoSansJP font-semibold transform xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base py-2 px-3 md:py-4 md:px-6 yellow-bg-thing rounded-full ease-out transition duration-150 hover:scale-110 flex items-center w-max border-2 border-white text-black  bg-white"
                         >
                             <svg

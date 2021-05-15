@@ -4,7 +4,7 @@ const NewNavBar = (props) => {
     return (
         <div className="nav">
             <nav className="font-NotoJP flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-semibold">
-                <Link to="/" className="pl-8 font-DancingScript">
+                <Link to="/cookies" className="pl-8 font-DancingScript">
                     Sweet Tooth Cookies
                 </Link>
                 {!props.isOpen && (
@@ -29,16 +29,13 @@ const NewNavBar = (props) => {
                     </div>
                 )}
                 <div className="pr-8 md:block hidden font-medium">
-                    <a href="/" className="p-4">
+                    <a href="/cookies" className="p-4">
                         Home
                     </a>
-                    <Link to="/about" className="p-4">
+                    <Link to="/cookies/about" className="p-4">
                         About
                     </Link>
-                    <a
-                        href="/#items"
-                        className="p-4"
-                    >
+                    <a href="/cookies/#items" className="p-4">
                         Order Now
                     </a>
                 </div>
