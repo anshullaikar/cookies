@@ -109,3 +109,12 @@ body { padding-top: 4rem; }
     top: 0.125em;
     position: relative;
 }
+.show-cart-button{
+    position: fixed;
+    width: 24%;
+    bottom: 0.25rem;
+    left: 38%;
+    z-index: 103;
+    color: white;
+    background-color: #0A2B41;
+}

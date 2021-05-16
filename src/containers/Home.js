@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import Hero from "./Hero";
 import Items from "../components/Items";
-import Cart from "../components/Cart"
+import Cart from "../components/Cart";
 //UI
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import Badge from "@material-ui/core/Badge";
@@ -15,6 +15,8 @@ const Home = () => {
             description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             title: "chocolate chip cookies",
+            image: "../src/images/cookie-plain.JPG",
+            price:180,
             amount: 0,
         },
         {
@@ -23,6 +25,7 @@ const Home = () => {
             description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             title: "chocolate chip cookies with extra chocolate chunks",
+            price:200,
             amount: 0,
         },
     ];
@@ -71,12 +74,24 @@ const Home = () => {
                     removeFromCart={handleRemoveFromCart}
                 />
             )}
-            <button onClick={(e) => {
-                e.preventDefault();
-                return setCartOpen((prev) => (!prev))}}>
-                <Badge badgeContent={getTotalItems(cartItems)} color="error">
-                    <AddShoppingCartIcon />
-                </Badge>
+            
+            <button
+                className="h-16 show-cart-button rounded-2xl focus:outline-none flex justify-center align-center"
+                onClick={(e) => {
+                    e.preventDefault();
+                    return setCartOpen((prev) => !prev);
+                }}
+            >
+                <div className="p-4">
+                    <Badge
+                        badgeContent={getTotalItems(cartItems)}
+                        color="error"
+                    >
+                        <AddShoppingCartIcon />
+                    </Badge>{" "}
+                    <br />
+                    CART
+                </div>
             </button>
         </Fragment>
     );
