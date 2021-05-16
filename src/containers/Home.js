@@ -1,8 +1,31 @@
-import React, { Fragment, useState } from 'react'
-import Hero from './Hero'
-import Items from "../components/Items"
+import React, { Fragment, useState } from "react";
+import Hero from "./Hero";
+import Items from "../components/Items";
+import Cart from "../components/Cart"
+//UI
+import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
+import Badge from "@material-ui/core/Badge";
 
 const Home = () => {
+    //cookies data
+    const data = [
+        {
+            id: "plain-cookies",
+            category: "cookies",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            title: "chocolate chip cookies",
+            amount: 0,
+        },
+        {
+            id: "extra-chocolate-cookies",
+            category: "cookies",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            title: "chocolate chip cookies with extra chocolate chunks",
+            amount: 0,
+        },
+    ];
     const [cartOpen, setCartOpen] = useState(false);
     const [cartItems, setCartItems] = useState([]);
     const getTotalItems = (cartItems) =>
@@ -26,7 +49,7 @@ const Home = () => {
         });
     };
     const handleRemoveFromCart = (id) => {
-        setCartItems(prev => (
+        setCartItems((prev) =>
             prev.reduce((ack, item) => {
                 if (item.id === id) {
                     if (item.amount === 1) return ack;
@@ -35,15 +58,28 @@ const Home = () => {
                     return [...ack, item];
                 }
             }, [])
-        )
         );
     };
     return (
         <Fragment>
-            <Hero/>
-            <Items/>
+            <Hero />
+            <Items items={data} handleAddToCart={handleAddToCart} />
+            {cartOpen && (
+                <Cart
+                    cartItems={cartItems}
+                    addToCart={handleAddToCart}
+                    removeFromCart={handleRemoveFromCart}
+                />
+            )}
+            <button onClick={(e) => {
+                e.preventDefault();
+                return setCartOpen((prev) => (!prev))}}>
+                <Badge badgeContent={getTotalItems(cartItems)} color="error">
+                    <AddShoppingCartIcon />
+                </Badge>
+            </button>
         </Fragment>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;
