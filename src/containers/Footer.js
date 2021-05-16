@@ -13,19 +13,19 @@ const Footer = () => {
             <div className="flex justify-evenly mb-4 w-4/5">
                 <a
                     className="w-32 bg-white rounded-3xl p-2 text-center text-blue-800"
-                    href=""
+                    href="https://www.instagram.com/sweet.tooth_cookies/"
                 >
                     Instagram
                 </a>
                 <a
                     className="w-32 bg-white rounded-3xl p-2 text-center text-green-700 "
-                    href=""
+                    href="https://wa.me/919920048504"
                 >
                     Whatsapp
                 </a>
                 <a
                     className="w-32 bg-white rounded-3xl p-2 text-center text-black"
-                    href=""
+                    href="tel:+919920048504"
                 >
                     Call Us
                 </a>
