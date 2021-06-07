@@ -23,11 +23,11 @@ body {
 }
 
 .card-gradient-bg {
-    background-color: #fdedd2;
+    background-color: #fec65d;
     /* background: #00c9ff; fallback for old browsers */
 }
 .form-order-bg {
-    background-color: #ebffed;
+    background-color: #fec65d;
 }
 
 .cookie-plain-bg {
@@ -99,10 +99,10 @@ body {
 }
 
 .footer-bg {
-    background-color: #ffd5c3;
+    background-color: #f27405;
 }
 #root {
-    background-color: #ffd5c3;
+    background-color: #5d9dfe;
 }
 .icon {
     display: inline-flex;

@@ -145,20 +145,32 @@ const Form = (props) => {
                         className=" rounded-3xl my-4 p-4"
                         onSubmit={handleSubmit(onSubmit)}
                     >
-                        <div>{"Full Name"}</div>
+                        <div>
+                            <span className="rounded-xl bg-white p-2">
+                                {"Full Name"}
+                            </span>
+                        </div>
                         <input
-                            className="border w-full rounded mb-2"
+                            className="my-3 border w-full rounded my-3"
                             {...register("name")}
                         />{" "}
-                        <div>{"Email Address"}</div>
+                        <div>
+                            <span className="my-3 rounded-xl bg-white p-2">
+                                {"Email Address"}
+                            </span>
+                        </div>
                         <input
-                            className="border w-full rounded mb-2"
+                            className="border w-full rounded my-3"
                             {...register("email")}
                         />
                         {/* register an input */}
-                        <div>{"Phone Number"}</div>
+                        <div>
+                            <span className="rounded-xl bg-white p-2">
+                                {"Phone Number"}
+                            </span>
+                        </div>
                         <input
-                            className="border w-full rounded mb-2"
+                            className="border w-full rounded my-3"
                             {...register("phonenumber", {
                                 pattern:
                                     /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/,
@@ -166,43 +178,70 @@ const Form = (props) => {
                             })}
                         />
                         {errors.phonenumber && (
-                            <p className="text-red-500">
+                            <p className="my-3 text-red-500">
                                 Has to be a phone number
                             </p>
                         )}
-                        <div>{"Address"}</div>
-                        <div>{"Line 1 (Flat/Building)"}</div>
+                        <div>
+                            <span className="rounded-xl bg-white p-2">
+                                {"Address"}
+                            </span>
+                        </div>
+                        <div className="my-4">
+                            <span className="rounded-xl bg-white p-2">
+                                {"Line 1 (Flat/Building)"}
+                            </span>
+                        </div>
                         <input
-                            className="border w-full rounded mb-2"
+                            className=" border w-full rounded mb-3"
                             {...register("address1")}
                         />
                         <div>
-                            {
-                                "Line 2 (Not required for Neelkanth Gardens residents)"
-                            }
+                            <span className="rounded-xl bg-white p-2">
+                                {
+                                    "Line 2 (Not required for Neelkanth Gardens residents)"
+                                }
+                            </span>
                         </div>
                         <input
-                            className="border w-full rounded mb-2"
+                            className="border w-full rounded my-3"
                             {...register("address2")}
                         />
-                        <div>Do you want the cookies to be eggless?</div>
-                        <input type="checkbox" {...register("eggless")} />
-                        <div>Method of Payment</div>
+                        <div className="mb-3">
+                            <span className="rounded-xl bg-white p-2">
+                                Do you want the cookies to be eggless?
+                            </span>
+                        </div>
+                        <input
+                            classname="p-2 "
+                            type="checkbox"
+                            {...register("eggless")}
+                        />
+                        <div className="mt-3 mb-4">
+                            <span className="rounded-xl bg-white p-2">
+                                Method of Payment
+                            </span>
+                        </div>
                         <input
                             type="radio"
                             {...register("payment")}
                             value="gpay"
                         />
-                        {
-                            " GPAY (Phone number: 9920048504, UPI ID: aryanbansal1710@hdfcbank)"
-                        }
+                        <span className="rounded-xl ml-2 bg-white p-2">
+                            {
+                                " GPAY (Phone number: 9920048504, UPI ID: aryanbansal1710@hdfcbank)"
+                            }
+                        </span>
                         <br />
                         <input
+                        className="my-5"
                             type="radio"
                             {...register("payment")}
                             value="paytm"
                         />
-                        {" PayTM (Phone Number: 9870025171)"}
+                        <span className="rounded-xl ml-2 bg-white p-2">
+                            {" PayTM (Phone Number: 9870025171)"}
+                        </span>
                         <br />
                         <div className="w-full flex items-center justify-center">
                             <input
