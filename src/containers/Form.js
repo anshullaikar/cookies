@@ -1,6 +1,6 @@
 import { useForm, Controller } from "react-hook-form";
 import { init, send } from "emailjs-com";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 init("user_e65E7A3FllifqdF0kvL2W");
 
@@ -22,6 +22,26 @@ const Form = (props) => {
         handleSubmit,
         formState: { errors },
     } = useForm();
+
+    useEffect(() => {
+        console.log(toSend);
+        if (toSend.to_email !== "") {
+            send(
+                "service_36ke9zb",
+                "template_au3y0ii",
+                toSend,
+                "user_e65E7A3FllifqdF0kvL2W"
+            )
+                .then((response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                })
+                .catch((err) => {
+                    console.log("FAILED...", err, toSend);
+                });
+            setOrderPlaced(true);
+        }
+    }, [toSend]);
+
     async function onSubmit(data) {
         cartItems.map((el) => {
             itemArr.push(`${el.id} ${el.amount}`);
@@ -56,27 +76,15 @@ const Form = (props) => {
                 .join(" ")}.`;
             message3 = `The total bill amount for your order is Rs.${grandTotal}`;
         }
-        Promise.resolve()
-            .then(() => {
-                setToSend({
-                    from_name: "Aryan",
-                    to_email: data.email,
-                    reply_to: "anshullaikar@gmail.com",
-                    line1: message1,
-                    line2: message2,
-                    line3: message3,
-                });
-            })
-            .then(() => {
-                console.log(toSend);
-                send(
-                    "service_36ke9zb",
-                    "template_au3y0ii",
-                    toSend,
-                    "user_e65E7A3FllifqdF0kvL2W"
-                );
-                setOrderPlaced(true);
-            });
+
+        setToSend({
+            from_name: "Aryan",
+            to_email: data.email,
+            reply_to: "anshullaikar@gmail.com",
+            line1: message1,
+            line2: message2,
+            line3: message3,
+        });
         console.log(toSend);
         try {
             const response = await fetch(
@@ -206,8 +214,8 @@ const Form = (props) => {
                 )}
                 {orderPlaced && (
                     <div className="font-semibold font-DancingScript bg-white dark-text rounded-3xl mx-8 my-4 p-4 lg:text-5xl md:text-4xl text-3xl capitalize text-center">
-                        Thank You For Your Order! <br/>You should recieve a
-                        confirmation email shortly.
+                        Thank You For Your Order! <br />
+                        You should recieve a confirmation email shortly.
                     </div>
                 )}
             </div>
