@@ -6,6 +6,7 @@ import NewNavBar from "./components/NewNavBar";
 import Home from "./containers/Home";
 import Dropdown from "./components/Dropdown";
 import OutsideAlerter from "./scripts/OutsideAlerter";
+import Form from "./containers/Form"
 function App() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -40,6 +41,8 @@ function App() {
             </Transition>
             <Switch>
                 <Route path="/cookies" exact component={Home}></Route>
+                <Route path="/cookies/form" exact component={Form}></Route>
+
                 {/* <Route path="/cookies/about" component={NewAbout}></Route> */}
             </Switch>
             <Footer />

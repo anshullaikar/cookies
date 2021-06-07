@@ -23,7 +23,7 @@ const Home = () => {
             id: "extra-chocolate-cookies",
             category: "cookies",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.",
             title: "chocolate chip cookies with extra chocolate chunks",
             price:200,
             amount: 0,

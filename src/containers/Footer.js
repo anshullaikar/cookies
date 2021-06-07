@@ -30,7 +30,7 @@ const Footer = () => {
                     Call Us
                 </a>
             </div>
-            <div className="flex justify-center mt-8">
+            <div className="flex justify-center mt-8 mb-16">
                 <div className="w-max bg-white rounded-3xl p-2 icon justify-center">
                     Website made with{" "}
                     <AiFillHeart className="mx-1 baseline text-red-600" /> by{" "}

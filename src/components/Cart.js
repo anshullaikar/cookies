@@ -1,6 +1,6 @@
 import CartItem from "./CartItem";
 import Button from "@material-ui/core/Button";
-
+import { Link } from "react-router-dom";
 //Styles
 import { Wrapper } from "./Cart.styles";
 
@@ -23,35 +23,48 @@ const Cart = ({ cartItems, addToCart, removeFromCart }) => {
                             removeFromCart={removeFromCart}
                         />
                     ))}
-                    {cartItems.length !== 0 &&
-                    (<div>
-                        <h2 className="pt-1 text-center italic ">
-                            Total : ₹{calculateTotal(cartItems).toFixed(2)}
-                        </h2>
-                        <h2 className="text-center italic">
-                            Discount : ₹
-                            {10 * (getTotalItems(cartItems)-1).toFixed(2)}
-                        </h2>
-                        <h2 className="text-center font-semibold">
-                            Grand Total : ₹
-                            {(
-                                calculateTotal(cartItems) -
-                                (10 * (getTotalItems(cartItems)-1))
-                            ).toFixed(2)}
-                        </h2>
-                        <p className="text-center text-sm italic">
-                            Quantity in sets of 4 cookies
-                        </p>
-                        <Button
-                            // onClick={(e) => {
-                            //     e.preventDefault();
-                            //     props.handleAddToCart(props.item);
-                            // }}
-                            className="rounded-3xl w-full font-sans font-semibold focus:outline-none"
-                        >
-                            Proceed To Checkout
-                        </Button>
-                    </div>)}
+                    {cartItems.length !== 0 && (
+                        <div>
+                            <h2 className="pt-1 text-center italic ">
+                                Total : ₹{calculateTotal(cartItems).toFixed(2)}
+                            </h2>
+                            <h2 className="text-center italic">
+                                Discount : ₹
+                                {10 * (getTotalItems(cartItems) - 1).toFixed(2)}
+                            </h2>
+                            <h2 className="text-center font-semibold">
+                                Grand Total : ₹
+                                {(
+                                    calculateTotal(cartItems) -
+                                    10 * (getTotalItems(cartItems) - 1)
+                                ).toFixed(2)}
+                            </h2>
+                            <p className="text-center text-sm italic">
+                                1 box has 4 cookies
+                            </p>
+                            <Button
+                                // onClick={(e) => {
+                                //     e.preventDefault();
+                                //     props.handleAddToCart(props.item);
+                                // }}
+                                className="rounded-3xl w-full h-4 font-sans font-semibold focus:outline-none"
+                            >
+                                <Link
+                                    to={{
+                                        pathname: "/cookies/form",
+                                        cartItems: cartItems,
+                                        grandTotal: (
+                                            calculateTotal(cartItems) -
+                                            10 * (getTotalItems(cartItems) - 1)
+                                        ).toFixed(2),
+                                        discount: (10 * (getTotalItems(cartItems) - 1).toFixed(2))
+                                    }}
+                                >
+                                    Proceed To Checkout
+                                </Link>
+                            </Button>
+                        </div>
+                    )}
                 </div>
             </Wrapper>
         </div>

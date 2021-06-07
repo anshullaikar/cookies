@@ -38,7 +38,8 @@ const CartItem = ({ item, addToCart, removeFromCart }) => {
                     >
                         -
                     </Button>
-                    <p>{4*item.amount}</p>
+                    {item.amount==1 && (<p className="m-1 text-center">{`1 box`}</p>)}
+                    {item.amount>1 && (<p className="m-1 text-center">{`${item.amount} boxes`}</p>)}
                     <Button
                         size="small"
                         disableElevation
@@ -47,6 +48,7 @@ const CartItem = ({ item, addToCart, removeFromCart }) => {
                     >
                         +
                     </Button>
+                    {/* add a delete button and disable - button */}
                 </div>
             </div>
             <img className="rounded-xl" src={image} alt={item.title} />
