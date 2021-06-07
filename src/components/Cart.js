@@ -42,12 +42,12 @@ const Cart = ({ cartItems, addToCart, removeFromCart }) => {
                             <p className="text-center text-sm italic">
                                 1 box has 4 cookies
                             </p>
-                            <Button
+                            <button
                                 // onClick={(e) => {
                                 //     e.preventDefault();
                                 //     props.handleAddToCart(props.item);
                                 // }}
-                                className="rounded-3xl w-full h-4 font-sans font-semibold focus:outline-none"
+                                className="border rounded w-full h-8 font-sans hover:bg-gray-100 focus:outline-none"
                             >
                                 <Link
                                     to={{
@@ -60,9 +60,9 @@ const Cart = ({ cartItems, addToCart, removeFromCart }) => {
                                         discount: (10 * (getTotalItems(cartItems) - 1).toFixed(2))
                                     }}
                                 >
-                                    Proceed To Checkout
+                                    PROCEED TO CHECKOUT
                                 </Link>
-                            </Button>
+                            </button>
                         </div>
                     )}
                 </div>
