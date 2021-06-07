@@ -33,12 +33,12 @@ const Form = (props) => {
                 "user_e65E7A3FllifqdF0kvL2W"
             )
                 .then((response) => {
+                    setOrderPlaced(true);
                     console.log("SUCCESS!", response.status, response.text);
                 })
                 .catch((err) => {
                     console.log("FAILED...", err, toSend);
                 });
-            setOrderPlaced(true);
         }
     }, [toSend]);
 
