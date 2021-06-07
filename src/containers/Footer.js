@@ -12,12 +12,14 @@ const Footer = () => {
             Don't use: https://wa.me/+001-(555)1234567 */}
             <div className="flex justify-evenly mb-4 w-4/5">
                 <a
+                    target="_blank"
                     className="w-32 bg-white rounded-3xl p-2 text-center text-blue-800"
                     href="https://www.instagram.com/sweet.tooth_cookies/"
                 >
                     Instagram
                 </a>
                 <a
+                    target="_blank"
                     className="w-32 bg-white rounded-3xl p-2 text-center text-green-700 "
                     href="https://wa.me/919920048504"
                 >
