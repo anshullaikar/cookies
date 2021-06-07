@@ -51,7 +51,7 @@ const CartItem = ({ item, addToCart, removeFromCart }) => {
                     {/* add a delete button and disable - button */}
                 </div>
             </div>
-            <img className="rounded-xl" src={image} alt={item.title} />
+            <img  className="md:max-h-36 max-h-20 rounded-xl" src={image} alt={item.title} />
         </Wrapper>
     );
 };

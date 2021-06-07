@@ -134,7 +134,7 @@ const Form = (props) => {
                 </div>
                 {cartItems && !orderPlaced && (
                     <form
-                        className=" bg-white rounded-3xl my-4 p-4"
+                        className=" rounded-3xl my-4 p-4"
                         onSubmit={handleSubmit(onSubmit)}
                     >
                         <div>{"Full Name"}</div>

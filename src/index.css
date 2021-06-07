@@ -7,7 +7,9 @@
 .font-DancingScript {
     font-family: "Dancing Script", cursive;
 }
-body { padding-top: 4rem; }
+body {
+    padding-top: 4rem;
+}
 
 .font-NotoSansJP {
     font-family: "Noto Sans JP", serif;
@@ -21,11 +23,11 @@ body { padding-top: 4rem; }
 }
 
 .card-gradient-bg {
-    background-color: #FDEDD2;
+    background-color: #fdedd2;
     /* background: #00c9ff; fallback for old browsers */
 }
 .form-order-bg {
-    background-color: #EBFFED;
+    background-color: #ebffed;
 }
 
 .cookie-plain-bg {
@@ -80,7 +82,7 @@ body { padding-top: 4rem; }
     z-index: 100;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
-.dropdown{
+.dropdown {
     position: fixed;
     width: 100%;
     top: 4rem;
@@ -97,26 +99,30 @@ body { padding-top: 4rem; }
 }
 
 .footer-bg {
-    background-color: #FFD5C3;
+    background-color: #ffd5c3;
 }
-#root{
-    background-color: #FFD5C3;
+#root {
+    background-color: #ffd5c3;
 }
 .icon {
     display: inline-flex;
     white-space: pre;
 }
 
-.baseline svg{
+.baseline svg {
     top: 0.125em;
     position: relative;
 }
-.show-cart-button{
+.show-cart-button {
     position: fixed;
     width: 24%;
     bottom: 0.25rem;
     left: 38%;
     z-index: 103;
     color: white;
-    background-color: #0A2B41;
+    background-color: #0a2b41;
+}
+.img-resp {
+    width: 100%;
+
 }
